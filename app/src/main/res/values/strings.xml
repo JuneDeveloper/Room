@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Room</string>
+    <string name="name">Введите имя</string>
+    <string name="number">Введите номер телефона</string>
+    <string name="save">Сохранить</string>
+    <string name="exit">Выход</string>
+</resources>
