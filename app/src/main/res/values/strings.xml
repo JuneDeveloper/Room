@@ -1,7 +1,13 @@
 <resources>
     <string name="app_name">Room</string>
-    <string name="name">Введите имя</string>
-    <string name="number">Введите номер телефона</string>
+    <string name="inputName">Введите имя</string>
+    <string name="inputNumber">Введите номер телефона</string>
     <string name="save">Сохранить</string>
     <string name="exit">Выход</string>
+    <string name="toolbarName">Контакты</string>
+    <string name="inputSurname">Введите фамилию</string>
+    <string name="time">Time</string>
+    <string name="phone">Номер телефона</string>
+    <string name="name">Имя</string>
+    <string name="surname">Фамилия</string>
 </resources>

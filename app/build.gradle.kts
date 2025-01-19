@@ -1,6 +1,6 @@
 plugins {
-    id("com.android.application")
-    id("org.jetbrains.kotlin.android")
+    alias(libs.plugins.android.application)
+    alias(libs.plugins.kotlin.android)
     id("kotlin-kapt")
 }
 
@@ -60,4 +60,6 @@ dependencies {
     implementation("androidx.recyclerview:recyclerview-selection:1.1.0")
 
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.9.0")
+    api("org.jetbrains.kotlinx:kotlinx-coroutines-core:$rootProject.coroutines")
+    api("org.jetbrains.kotlinx:kotlinx-coroutines-android:$rootProject.coroutines")
 }

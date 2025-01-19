@@ -13,23 +13,31 @@
         android:id="@+id/toolbarTB"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:title="Контакты"
-        android:background="@color/blue"
+        app:title="@string/toolbarName"
+        android:background="@color/green"
         android:layout_marginBottom="15dp"
         tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/inputSurnameET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/inputSurname"
+        android:gravity="center"/>
 
     <EditText
         android:id="@+id/inputNameET"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/name"
+        android:hint="@string/inputName"
+        android:layout_marginTop="15dp"
         android:gravity="center"/>
 
     <EditText
         android:id="@+id/inputPhoneET"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/number"
+        android:hint="@string/inputNumber"
         android:layout_marginTop="15dp"
         android:gravity="center"/>
 
@@ -38,12 +46,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/save"
+        android:onClick="saveData"
         android:layout_margin="15dp"/>
 
-    <TextView
-        android:id="@+id/outputTextTV"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycleViewTV"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center_horizontal" />
+        android:gravity="center_horizontal"
+        tools:listitem="@layout/list_item"/>
 
 </LinearLayout>

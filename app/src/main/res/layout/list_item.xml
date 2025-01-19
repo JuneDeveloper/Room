@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:backgroundTint="@color/green">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/surnameCardTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/surname"
+                android:padding="10dp"/>
+            <TextView
+                android:id="@+id/phoneCardTV"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:hint="@string/phone"
+                android:padding="10dp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/nameCardTV"
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:hint="@string/name"
+            android:padding="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/imageDeleteCard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/delete_forever"
+                android:padding="10dp"/>
+            <TextView
+                android:id="@+id/timeCardTV"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:hint="@string/time"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
