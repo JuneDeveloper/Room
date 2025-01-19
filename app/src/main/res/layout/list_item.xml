@@ -7,11 +7,11 @@
     
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="85dp"
+        android:layout_height="wrap_content"
         android:orientation="horizontal">
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="250dp"
             android:layout_height="match_parent"
             android:orientation="vertical">
 
@@ -22,42 +22,40 @@
                 android:hint="@string/surname"
                 android:padding="10dp"/>
             <TextView
+                android:id="@+id/nameCardTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/name"
+                android:padding="10dp"/>
+            <TextView
                 android:id="@+id/phoneCardTV"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:hint="@string/phone"
                 android:padding="10dp"/>
 
         </LinearLayout>
 
-        <TextView
-            android:id="@+id/nameCardTV"
-            android:layout_width="180dp"
-            android:layout_height="match_parent"
-            android:hint="@string/name"
-            android:padding="10dp"/>
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            android:gravity="center">
+            android:gravity="end">
 
-            <ImageView
-                android:id="@+id/imageDeleteCard"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/delete_forever"
-                android:padding="10dp"/>
             <TextView
                 android:id="@+id/timeCardTV"
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:hint="@string/time"
-                android:gravity="center" />
+                android:padding="15dp" />
+            <ImageView
+                android:id="@+id/imageDeleteCard"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/delete_forever"
+                android:padding="15dp" />
 
         </LinearLayout>
-
 
     </LinearLayout>
 
