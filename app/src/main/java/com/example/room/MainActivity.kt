@@ -94,7 +94,7 @@ class MainActivity : AppCompatActivity(),ContactAdapter.ContactClickListener {
     @SuppressLint("SimpleDateFormat")
     private fun formatMilliseconds(time: Long): String {
         val timeFormat = SimpleDateFormat("EEE,  HH:mm")
-        timeFormat.timeZone = TimeZone.getTimeZone("GMT+05")
+        timeFormat.timeZone = TimeZone.getTimeZone("GMT+08")
         return timeFormat.format(Date(time))
     }
 
